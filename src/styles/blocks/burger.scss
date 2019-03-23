@@ -1,0 +1,35 @@
+.burger {
+    width: 20px;
+    height: 3px;
+    background-color: #0777b9;
+    position: relative;
+    &-link {
+        display: none;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        @include tablet() {
+            display: block;
+        }
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: #0777b9;
+        position: absolute;
+        top: -6px;
+        transition: 0.5s;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: #0777b9;
+        position: absolute;
+        top: 6px;
+        transition: 0.5s;
+    }
+}
