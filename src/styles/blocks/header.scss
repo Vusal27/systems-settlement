@@ -19,6 +19,10 @@
         }
         &-text {
             color: #004585;
+            cursor: pointer;
+        }
+        &-arrow {
+            transform: rotate(180deg);
         }
     }
     &__logo {
